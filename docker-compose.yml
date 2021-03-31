@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+  # Composer
+  composer:
+    image: composer
+    volumes:
+      - .:/app:z
+      # Map local user Composer directory with container for cache packages
+      - ~/.docker_cache/composer:/tmp/cache:z
+    working_dir: /app
+
+  # PHP
+  php:
+    image: php:cli
+    volumes:
+      - .:/app
+    working_dir: /app
+
+  # PHPUnit
+  phpunit:
+    image: php:cli
+    command: "vendor/bin/phpunit"
+    volumes:
+      - .:/app
+    working_dir: /app

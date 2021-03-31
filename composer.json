@@ -1,0 +1,41 @@
+{
+    "name": "internexus/watcher-laravel",
+    "description": "PHP code execution monitoring package for Laravel",
+    "keywords": ["php", "code execution", "laravel", "error handler", "exception", "monitoring"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nícolas Huber",
+            "email": "nicolasluishuber@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.0|^8.0",
+        "laravel/framework": "^7.0|^8.0",
+        "internexus/watcher-php": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "Internexus\\WatcherLaravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Internexus\\WatcherLaravel\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Internexus\\WatcherLaravel\\WatcherServiceProvider"
+            ],
+            "aliases": {
+                "Watcher" : "Internexus\\WatcherLaravel\\Facades\\Watcher"
+            }
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.16"
+    }
+}
