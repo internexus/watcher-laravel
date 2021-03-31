@@ -1,11 +1,11 @@
 # Internexus Watcher
 
-PHP monitoring package.
+PHP code execution monitoring package for Laravel.
 
 ### Install
 
 ```
-composer require internexus/watcher-php
+composer require internexus/watcher-laravel
 ```
 
 #### Publish config
