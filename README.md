@@ -44,7 +44,7 @@ $app->register(\Internexus\WatcherLaravel\WatcherServiceProvider::class);
 ### Configure the .env variable
 
 ```
-WATCHER_TOKEN=[project token]
+WATCHER_API_KEY=[project token]
 ```
 
 #### Check your environment

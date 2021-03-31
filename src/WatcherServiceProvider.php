@@ -30,7 +30,7 @@ class WatcherServiceProvider extends ServiceProvider
         );
 
         $this->app->singleton('watcher', function () {
-            $config = new Config(config('watcher.url'), config('watcher.key'));
+            $config = new Config(config('watcher.key'), config('watcher.url'));
 
             return new Watcher($config);
         });
