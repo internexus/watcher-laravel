@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'query' => env('WATCHER_QUERY', true),
+    'query' => env('WATCHER_QUERY', false),
 
     /*
     |--------------------------------------------------------------------------
