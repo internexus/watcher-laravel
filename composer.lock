@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9289814a5e0b9ce76f91b3524aad5d39",
+    "content-hash": "9219685a2c81caea89355e106b437088",
     "packages": [
         {
             "name": "brick/math",
@@ -425,33 +425,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/internexus/watcher-php.git",
-                "reference": "28a028916a36c8f12be130ba26b4d14e769394bc"
+                "reference": "5eb08a11104251444d53af0f714486d405730399"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/internexus/watcher-php/zipball/28a028916a36c8f12be130ba26b4d14e769394bc",
-                "reference": "28a028916a36c8f12be130ba26b4d14e769394bc",
+                "url": "https://api.github.com/repos/internexus/watcher-php/zipball/5eb08a11104251444d53af0f714486d405730399",
+                "reference": "5eb08a11104251444d53af0f714486d405730399",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "7.*|8.*",
                 "php": "^7.0|^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "10.0.x-dev"
             },
             "default-branch": true,
             "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Internexus\\Watcher\\WatcherServiceProvider"
-                    ],
-                    "aliases": {
-                        "Watcher": "Internexus\\Watcher\\Facades\\Watcher"
-                    }
-                }
-            },
             "autoload": {
                 "psr-4": {
-                    "Internexus\\Watcher\\": "src"
+                    "Internexus\\Watcher\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -464,18 +456,19 @@
                     "email": "nicolasluishuber@gmail.com"
                 }
             ],
-            "description": "PHP monitoring package",
+            "description": "PHP code execution monitoring package",
             "keywords": [
+                "code execution",
+                "error handler",
                 "exception",
-                "laravel",
                 "monitoring",
                 "php"
             ],
             "support": {
                 "issues": "https://github.com/internexus/watcher-php/issues",
-                "source": "https://github.com/internexus/watcher-php/tree/main"
+                "source": "https://github.com/internexus/watcher-php/tree/develop"
             },
-            "time": "2021-03-18T18:35:50+00:00"
+            "time": "2021-04-01T16:50:33+00:00"
         },
         {
             "name": "laravel/framework",
